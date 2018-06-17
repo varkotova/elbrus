@@ -20,9 +20,9 @@ from elbrusblog import views
 
 urlpatterns = [
     path('', views.index, name=''),
-    path('index', views.index, name='index'),
+    path('/', views.index, name='index'),
     path('page/<int:num_page>', views.articles_page, name='articles_page'),
-    path('page/<int:num_page>/<int:num_article>', views.article_page, name='article_page'),
+    path('article/<int:num_article>', views.article_page, name='article_page'),
 
 
 

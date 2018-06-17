@@ -26,7 +26,7 @@ def articles_page(request, num_page):
 
 
 
-def article_page(request, num_page, num_article):
+def article_page(request, num_article):
 
 
     return render(request, 'elbrusblog/article.html')
