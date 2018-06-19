@@ -20,7 +20,7 @@ class Article(models.Model):
     picture_micro_admin.allow_tags = True
 
     def __str__(self):
-        return 'ID: {} - [{}] - {}'.format(self.id, self.article_date, self.article_title)
+        return '[{}] - {}'.format(self.article_date, self.article_title)
 
 
 
@@ -32,4 +32,4 @@ class Subscriber(models.Model):
     subscriber_message_date = models.DateField(auto_now=True, verbose_name='Дата сообщения')
 
     def __str__(self):
-        return 'ID: {} - [{}] - {}'.format(self.id, self.subscriber_message_date, self.subscriber_name)
+        return '[{}] - {}'.format(self.subscriber_message_date, self.subscriber_name)

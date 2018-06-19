@@ -17,7 +17,7 @@ def index(request):
 
 
 def articles_page(request, num_page):
-    articles = Article.objects.all().order_by('article_title')
+    articles = Article.objects.all()[0:4]
     context = {
         'articles': articles,
     }
